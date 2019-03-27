@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sstu.matrixCalc.gui.MainController">
+    <TextArea fx:id="matrixA" layoutX="35.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица A" />
+    <TextArea fx:id="matrixB" layoutX="326.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица B" />
+    <TextArea fx:id="resultWindow" editable="false" layoutX="589.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица C" />
+    <Button fx:id="multiplyABy" layoutX="35.0" layoutY="267.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Умножить на" />
+    <TextField fx:id="multAByValue" layoutX="184.0" layoutY="267.0" prefHeight="25.0" prefWidth="51.0" promptText="число" />
+    <Button fx:id="multiplyBBy" layoutX="326.0" layoutY="267.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Умножить на" />
+    <TextField fx:id="multBByValue" layoutX="475.0" layoutY="267.0" prefHeight="25.0" prefWidth="51.0" promptText="число" />
+    <Button fx:id="switchMatrixAB" layoutX="262.0" layoutY="76.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="39.0" text="← &#10;→" />
+    <Button fx:id="multMatrix" layoutX="262.0" layoutY="137.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="×" />
+    <Button fx:id="addMatrix" layoutX="262.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="+" />
+    <Button fx:id="subMatrix" layoutX="262.0" layoutY="209.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="-" />
+    <Text fill="#8a8a8a" layoutX="546.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+        <font>
+            <Font size="36.0" />
+        </font>
+    </Text>
+    <Button fx:id="powerA" layoutX="35.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Возвести в степень" />
+    <TextField fx:id="powerAByValue" layoutX="184.0" layoutY="302.0" prefHeight="25.0" prefWidth="51.0" promptText="число" />
+    <Button fx:id="powerB" layoutX="326.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Возвести в степень" />
+    <TextField fx:id="powerBByValue" layoutX="475.0" layoutY="302.0" prefHeight="25.0" prefWidth="51.0" promptText="число" />
+   <Button fx:id="transposeA" layoutX="35.0" layoutY="334.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Транспонировать" />
+   <Button fx:id="transposeB" layoutX="326.0" layoutY="334.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Транспонировать" />
+   <Button fx:id="switchMatrixBC" layoutX="539.0" layoutY="76.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="39.0" text="← &#10;→" />
+   <Button fx:id="helpBtn" layoutX="771.0" layoutY="348.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+   <Label layoutX="90.0" layoutY="21.0" text="Матрица A">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="382.0" layoutY="21.0" text="Матрица B">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="644.0" layoutY="21.0" text="Матрица C">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>
