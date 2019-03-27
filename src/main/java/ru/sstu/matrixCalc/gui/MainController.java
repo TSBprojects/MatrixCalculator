@@ -197,7 +197,7 @@ public class MainController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText(message);
             Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-            stage.getIcons().add(new Image("/main.png")); // To add an icon
+            stage.getIcons().add(new Image("/img/main.png")); // To add an icon
             alert.showAndWait();
         });
     }
