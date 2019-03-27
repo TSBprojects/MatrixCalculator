@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sstu.matrixCalc.gui.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sstu.matrixCalc.gui.MainController">
     <TextArea fx:id="matrixA" layoutX="35.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица A" />
     <TextArea fx:id="matrixB" layoutX="326.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица B" />
     <TextArea fx:id="resultWindow" editable="false" layoutX="589.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" promptText="Матрица C" />

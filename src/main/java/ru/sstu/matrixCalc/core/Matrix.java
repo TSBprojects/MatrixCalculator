@@ -103,7 +103,7 @@ public class Matrix {
 
         for (int i = 0; i < rowCount; i++) {
             for (int j = 0; j < columnCount; j++) {
-                result.setValue(j, i, m.getValue(i, j));
+                result.setValue(i, j, m.getValue(j, i));
             }
         }
 
