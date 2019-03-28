@@ -20,12 +20,9 @@ public class Matrix {
     }
 
     public static Matrix add(Matrix m1, Matrix m2) {
-        if (m1.getRowsCount() != m2.getRowsCount()) {
-            throw new IllegalArgumentException("Matrices' row count must match");
-        }
-
-        if (m1.getColumnsCount() != m2.getColumnsCount()) {
-            throw new IllegalArgumentException("Matrices' column count must match");
+        if (m1.getRowsCount() != m2.getRowsCount()
+                || m1.getColumnsCount() != m2.getColumnsCount()) {
+            throw new IllegalArgumentException("Количество строк и колонок матриц должны совпадать");
         }
 
         int rowCount = m1.getRowsCount();
@@ -48,7 +45,7 @@ public class Matrix {
 
     public static Matrix multiply(Matrix m1, Matrix m2) {
         if (m1.getColumnsCount() != m2.getRowsCount()) {
-            throw new IllegalArgumentException("m1's columns count and m2's row count must match");
+            throw new IllegalArgumentException("Количество колонок в первой матрице должно совпадать с количеством строк во второй матрице");
         }
 
         int sideLength = m1.getColumnsCount();
@@ -86,6 +83,10 @@ public class Matrix {
     }
 
     public static Matrix pow(Matrix m, int value) {
+        if (value < 1) {
+            throw new IllegalArgumentException("Отрицательная степень не поддерживается");
+        }
+
         Matrix result = new Matrix(m.getData());
 
         for (int i = 1; i < value; i++) {

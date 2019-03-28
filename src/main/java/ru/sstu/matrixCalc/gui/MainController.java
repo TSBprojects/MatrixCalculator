@@ -294,7 +294,8 @@ public class MainController implements Initializable {
             callback.executableCode();
         } catch (Exception e) {
             log.error(e.getMessage(), e);
-            showError(e.getMessage() + " \nSee logs: 'logs.log'");
+            showError(e.getMessage() + " \nПодробно: 'logs.log'");
+            resultWindow.setText("");
         }
     }
 

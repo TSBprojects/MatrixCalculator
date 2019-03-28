@@ -40,14 +40,14 @@ public class HelpController implements Initializable {
 
             userGuidTextArea.setText(
                     new String(
-                            Files.readAllBytes(Paths.get("pack app/guids/userGuid.txt")),
+                            Files.readAllBytes(Paths.get("guids/userGuid.txt")),
                             "UTF-8"
                     )
             );
 
             adminGuidTextArea.setText(
                     new String(
-                            Files.readAllBytes(Paths.get("pack app/guids/adminGuid.txt")),
+                            Files.readAllBytes(Paths.get("guids/adminGuid.txt")),
                             "UTF-8"
                     )
             );
